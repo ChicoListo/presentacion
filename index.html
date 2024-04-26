@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Mi Página Personal</h1>
+    </header>
+    <nav class="main-nav">
+        <a href="#quien-soy">Quién Soy</a>
+        <a href="#datos-personales">Datos Personales</a>
+        <a href="#datos-laborales">Datos Laborales</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="quien-soy" class="content-section">
+        <h2>Quién Soy</h2>
+        <p>¡Hola! Soy Fernando León y esta es mi página personal.</p>
+    </section>
+    <section id="datos-personales" class="content-section">
+        <h2>Datos Personales</h2>
+        <p>Nombre: Fernando León</p>
+        <p>Edad: 25 años.</p>
+        <p>Escuela de Procedencia: CBTIS 4</p>
+        <img src="./img/1.jpg" alt="Foto de Fernando">
+    </section>
+    <section id="datos-laborales" class="content-section">
+        <h2>Datos Laborales</h2>
+        <p>Trabajos Previos: Vendedor, almacenista, capturista de datos.</p>
+        <p>Trabajo Actual: Carpintero y diseñador CNC.</p>
+    </section>
+    <section id="contacto" class="content-section">
+        <h2>Contacto</h2>
+        <p>Correo Electrónico: fernandoleonventas@gmail.com</p>
+        <p>Teléfono: 8715778978</p>
+        <form action="mailto:fernandoleonventas@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>
